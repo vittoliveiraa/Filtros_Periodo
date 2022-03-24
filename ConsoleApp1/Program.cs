@@ -28,11 +28,6 @@ namespace ConsoleApp1
 
             periodo.ExibirPeriodo((PeriodoEnum)opcao);
 
-            periodo.ExibirPeriodo(PeriodoEnum.EsteAno);
-            
-            
-            
-
         }
     }
 }
