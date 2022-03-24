@@ -52,7 +52,7 @@ namespace ConsoleApp1
 
                 case PeriodoEnum.MesAnterior:
                     var dataFimMesAnt = new DateTime(DateTime.Today.AddDays(-DateTime.Today.Day).Year, DateTime.Today.Month, 01).AddDays(-1);
-                    var dataInicioMesAnt = dataFimMesAnt.AddMonths(0).AddDays(-dataFimMesAnt.Day + 1);
+                    var dataInicioMesAnt = dataFimMesAnt.AddDays(-dataFimMesAnt.Day + 1);
                     DataInicio = dataInicioMesAnt;
                     DataFim = dataFimMesAnt;
                     break;
@@ -73,7 +73,7 @@ namespace ConsoleApp1
                     break;
 
                 case PeriodoEnum.EsteAno:
-                     DataInicio = new DateTime(DateTime.Today.AddYears(0).Year, 1, 1);
+                     DataInicio = new DateTime(DateTime.Today.Year, 1, 1);
                      DataFim = DateTime.Today;
 
                     break;

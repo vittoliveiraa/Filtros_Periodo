@@ -27,7 +27,6 @@ namespace ConsoleApp1
             var periodo = new Periodo();
 
             periodo.ExibirPeriodo((PeriodoEnum)opcao);
-
         }
     }
 }
